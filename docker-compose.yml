@@ -7,6 +7,6 @@ services:
       - 3000:3000
   back:
     build: ./server
-    image: push alexanderas0/back-node01:tagname
+    image: push alexanderas0/back-node01:1.0
     ports:
       - 5000:5000

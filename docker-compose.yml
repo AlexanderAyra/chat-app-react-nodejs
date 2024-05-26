@@ -1,10 +1,12 @@
-version: '3.8'
+version: "3.8"
 services:
   front:
     build: ./public
+    image: alexanderas0/front-react01:1.0
     ports:
       - 3000:3000
-  api:
+  back:
     build: ./server
+    image: push alexanderas0/back-node01:tagname
     ports:
       - 5000:5000

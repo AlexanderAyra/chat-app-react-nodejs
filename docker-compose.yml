@@ -2,11 +2,11 @@ version: "3.8"
 services:
   front:
     build: ./public
-    image: alexanderas0/front-react01:1.0
     ports:
       - 3000:3000
   back:
     build: ./server
-    image: alexanderas0/back-node01:1.0
     ports:
       - 5000:5000
+    # image: alexanderas0/front-react01:1.0
+    # image: alexanderas0/back-node01:1.0
